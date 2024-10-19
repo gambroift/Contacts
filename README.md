@@ -21,8 +21,8 @@ This will download an html file containing your contacts' data. Now we have to c
 
 ## Step 2: Read the html file and retrieve contacs information
 
-Execute the python script contacts.py (loaded in the repo) in the same folder with the Telegram html file and the pre-set csv file. 
-#### Note: it is important to use the pre-set csv file because google contacs recognize the coloumns' name and store data in the correct way.
+Execute the python script contact.py (loaded in the repo) in the same folder with the Telegram html file and the pre-set csv file empty.csv. 
+#### Note: it is important to use the pre-set csv file (empty.csv) because google contacs recognize the coloumns' name and store data in the correct way.
 If neessary you can download python from https://www.python.org/downloads/. A user giude can be found at https://wiki.python.org/moin/BeginnersGuide.
 The script will output your contacts' data in a csv file storing: Name, Surname and Phone Number (you can modify the script to store also the email or other data if necessary).
 
