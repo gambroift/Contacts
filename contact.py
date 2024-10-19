@@ -22,14 +22,12 @@ for entry in entries:
     # Extract the contact's initials, name, and details
     
     full_name = entry.find("div", class_="name bold").text.strip()
-    if full_name=="Davide Collegio":
-          continue
     phone = entry.find("div", class_="details_entry details").text.strip()
-    phone_number.append(int(phone.replace(" ", "")[-10:]))
-    label.append("cellulare")
+    phone_number.append(int(phone.replace(" ", "")[-10:])) # Remove empty spaces and save only 10 digit of phone number (my case)
+    label.append("cell phone")
     name_parts = full_name.split(" ", 1)  # Split by the first space
     first_name.append(name_parts[0])
-    last_name.append(name_parts[1] if len(name_parts) > 1 else "")
+    last_name.append(name_parts[1] if len(name_parts) > 1 else "") # Nothing if there is no surname
 
     
     
